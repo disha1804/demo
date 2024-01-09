@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--<form method="post" action="/save_data">
+        {% csrf_token %}
+        <label for="fname">enter  Full name</label>
+        <input type="text" name="fname" id="fname" value=""/><br>
+        <label for="age">enter Age</label>
+        <input type="text" name="age"  id="age" value=""/><br>
+        <label for="marks">enter Marks</label>
+        <input type="text" name="marks" id="marks" value=""/>        
+        <br>
+        <input  type="submit">
+        <input type="reset">
+
+    </form>-->
+
+   <!--<form method="post" action="{% url 'save_data1' %}">
+        {% csrf_token %}
+        <label>Enter First Name</label>
+        <input type="text" name="fname" id="fname" value=""/><br>
+        <label>Enter Last Name</label>
+        <input type="text" name="lname" id="lname" value=""/><br>
+        <label>Enter Marks</label>
+        <input type="text" name="marks" id="marks" value=""/><br>
+        <label>Enter per</label>
+        <input type="text" name="per" id="per" value=""/><br>
+        <input type="submit">
+
+
+    </form>-->
+    <form method="POST" action="{% url 'save_msg'%}">
+        <label>Enter First Name</label>
+        <input type="text" name="fname" id="fname" value=""/><br>
+        <label>Enter Last name</label>
+        <input type="text" name="lname" id="lname" value=""/><br>
+        <label>Enter Your Age</label>
+        <input type="text" name="age" id="age" value=""/><br>
+        <label>Enter Your Gender</label>
+        <input type="text" name="Gender" id="Gender" value=""/><br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
